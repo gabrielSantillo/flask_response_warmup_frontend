@@ -1,7 +1,7 @@
 <template>
     <div>
         <h1>Pokemon</h1>
-        <section v-for="pokemon in pokemons" :key="pokemon[`id`]">
+        <section v-for="pokemon in pokemons" :key="pokemon[3]">
             <h2>{{pokemon[0]}}</h2>
             <img :src="pokemon[2]" alt="">
             <p>{{pokemon[1]}}</p>
