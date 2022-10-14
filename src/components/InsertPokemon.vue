@@ -14,7 +14,7 @@ export default {
     handle_submit() {
       axios
         .request({
-          url: `http://127.0.0.1:5000/api/pokemon`,
+          url: `${process.env.VUE_APP_BASE_DOMAIN}/api/pokemon`,
           method: `POST`,
           /* data being sent */
           data: {
